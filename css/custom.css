@@ -13,7 +13,7 @@ ul li, li {
 }
 
 .navbar {
-  display: none; 
+ 
 }
 
 /* Larger than phone */
@@ -23,6 +23,11 @@ ul li, li {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  
+  li.logo {
+    float: left;
+  }
+  
   .navbar {
     padding: 4rem 0;
   }
@@ -76,7 +81,6 @@ ul li, li {
 
 li.logo {
   width: 12rem;
-  float: left;
   text-align: left;
   text-transform: uppercase;
 }
