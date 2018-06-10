@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="logo">
+                    <h2>Watercolours</h2>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link active" href="/">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/about.html">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row" id="view-l">
+            <div class="close-btn" onclick="closeView()">close</div>
+            <img src="" id="view-l-img" />
+        </div>
+
+        <div class="row album">
+            <div class="one-third column">
+                <img src="/pics/1.png" onclick="showPic(1);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+            <div class="one-third column">
+                <img src="/pics/2.png" onclick="showPic(2);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+            <div class="one-third column">
+                <img src="/pics/3.png" onclick="showPic(3);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row album">
+            <div class="one-third column">
+                <img src="/pics/4.png" onclick="showPic(4);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+            <div class="one-third column">
+                <img src="/pics/5.png" onclick="showPic(5);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+            <div class="one-third column">
+                <img src="/pics/6.png" onclick="showPic(6);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer">
+            <div class="column">
+                <span>
+                    <h6>© 2018 Watercolours </h6>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+
+        function closeView() {
+            $("#view-l").hide();
+        }
+
+        function showPic(id) {
+            $("#view-l-img").attr("src", "/pics/" + id + ".png");
+            $("#view-l").show();
+        }
+
+    </script>
+</body>
+
+</html>

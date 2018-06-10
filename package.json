@@ -1,0 +1,19 @@
+{
+  "name": "nnwatercolours.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "site.js",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kayshn/nnwatercolours.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
