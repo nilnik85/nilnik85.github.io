@@ -189,6 +189,15 @@ img {
   width: 100%;
 }
 
+.album img {
+  height: 340px;
+  width: auto;
+}
+
+.album .column {
+  overflow: hidden;
+}
+
 .img-footer {
   text-align: center;
   color: #777;

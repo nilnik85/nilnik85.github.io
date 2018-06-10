@@ -37,7 +37,7 @@
 
         <div class="row album">
             <div class="one-third column">
-                <img src="/pics/1.png" onclick="showPic(1);" />
+                <img src="/pics/1.jpg" onclick="showPic(1);" />
                 <div class="img-footer">
                     <strong>Autumn Leaves</strong>
                     <h6>Size 14 x 10 in</h6>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="one-third column">
-                <img src="/pics/2.png" onclick="showPic(2);" />
+                <img src="/pics/2.jpg" onclick="showPic(2);" />
                 <div class="img-footer">
                     <strong>Autumn Leaves</strong>
                     <h6>Size 14 x 10 in</h6>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="one-third column">
-                <img src="/pics/3.png" onclick="showPic(3);" />
+                <img src="/pics/3.jpg" onclick="showPic(3);" />
                 <div class="img-footer">
                     <strong>Autumn Leaves</strong>
                     <h6>Size 14 x 10 in</h6>
@@ -67,7 +67,7 @@
 
         <div class="row album">
             <div class="one-third column">
-                <img src="/pics/4.png" onclick="showPic(4);" />
+                <img src="/pics/4.jpg" onclick="showPic(4);" />
                 <div class="img-footer">
                     <strong>Autumn Leaves</strong>
                     <h6>Size 14 x 10 in</h6>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="one-third column">
-                <img src="/pics/5.png" onclick="showPic(5);" />
+                <img src="/pics/5.jpg" onclick="showPic(5);" />
                 <div class="img-footer">
                     <strong>Autumn Leaves</strong>
                     <h6>Size 14 x 10 in</h6>
@@ -85,7 +85,37 @@
                 </div>
             </div>
             <div class="one-third column">
-                <img src="/pics/6.png" onclick="showPic(6);" />
+                <img src="/pics/6.jpg" onclick="showPic(6);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row album">
+            <div class="one-third column">
+                <img src="/pics/7.jpg" onclick="showPic(7);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+            <div class="one-third column">
+                <img src="/pics/8.jpg" onclick="showPic(8);" />
+                <div class="img-footer">
+                    <strong>Autumn Leaves</strong>
+                    <h6>Size 14 x 10 in</h6>
+                    <h6 class="small">Original painted on 140lb watercolour paper</h6>
+                    <h6>Price 52.00 GBP</h6>
+                </div>
+            </div>
+            <div class="one-third column">
+                <img src="/pics/9.jpg" onclick="showPic(9);" />
                 <div class="img-footer">
                     <strong>Autumn Leaves</strong>
                     <h6>Size 14 x 10 in</h6>
@@ -113,8 +143,13 @@
         }
 
         function showPic(id) {
-            $("#view-l-img").attr("src", "/pics/" + id + ".png");
+            $("#view-l-img").attr("src", "/pics/" + id + ".jpg");
             $("#view-l").show();
+
+            $('html, body').animate({
+                scrollTop: $("#view-l").offset().top
+            }, 1000);
+
         }
 
     </script>
