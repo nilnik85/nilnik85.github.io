@@ -13,7 +13,26 @@ ul li, li {
 }
 
 .navbar {
- 
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.navbar-item {
+  position: relative;
+  display: inline-block;
+  min-width: 9rem;
+  margin-bottom: 0; 
+}
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .2rem;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #999; 
+}
+.navbar-link.active {
+  color: #111; 
 }
 
 /* Larger than phone */
@@ -39,6 +58,7 @@ ul li, li {
     height: 6.5rem;
     background: #fff;
     z-index: 99;
+    border-bottom: 0;
  }
   .navbar-spacer {
     display: none; }
@@ -50,23 +70,7 @@ ul li, li {
     margin-bottom: 0;
     text-align: right;
   }
-  .navbar-item {
-    position: relative;
-    display: inline-block;
-    min-width: 9rem;
-    margin-bottom: 0; 
-  }
-  .navbar-link {
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: .2rem;
-    text-decoration: none;
-    line-height: 6.5rem;
-    color: #999; 
-  }
-  .navbar-link.active {
-    color: #111; 
-  }
+  
   .album img {
     height: 340px;
     width: auto !important;
