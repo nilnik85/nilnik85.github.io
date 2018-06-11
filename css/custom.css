@@ -20,9 +20,15 @@ ul li, li {
 .navbar-item {
   position: relative;
   display: inline-block;
-  min-width: 9rem;
   margin-bottom: 0; 
+  margin-left: 1rem;
+  vertical-align: middle;
 }
+
+.navbar-item img  {
+  width: 20px;
+}
+
 .navbar-link {
   text-transform: uppercase;
   font-size: 11px;
