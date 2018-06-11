@@ -67,6 +67,10 @@
         }
 
         function showPic(id) {
+            if(window.outerWidth < 768){
+                return;
+            }
+            
             $("#view-l-img").attr("src", "/pics/" + id + ".jpg");
             $("#view-l").show();
 
