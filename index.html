@@ -1,6 +1,10 @@
 <html>
 
 <head>
+    <meta charset="utf-8" />
+    <title>Niloo Watercolour paintings - London, UK</title>
+    <meta name="description" content="Watercolour paintings. Flowers, sunset and nature"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
@@ -27,13 +31,14 @@
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="logo">
-                    <h2>Watercolours</h2>
+                    <h3>NILOO Art</h3>
+                    <h6 class="small">My simple watercolour paintings</h6>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-link active" href="/">Home</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="/contact.html">Contact</a>
+                    <a class="navbar-link active" href="mailto:nilnik85@gmail.com?Subject=Niloo%20Watercolours" target="_top">Contact</a>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-link" href="https://www.facebook.com/">
@@ -100,13 +105,14 @@
 
                         if (!val) continue;
 
-                        var img = "<img src='/pics/" + val.id + ".jpg' onclick='showPic(" + val.id + ");' />";
+                        var img = "<div class='img-container'><img src='/pics/" + val.id + ".jpg' onclick='showPic(" + val.id + ");' /></div>";
                         var footerName = "<strong>" + val.name + "</strong>";
-                        var footerSize = "<h6>" + val.size + "</h6>";
-                        var footerDesc = "<h6 class='small'>" + val.desc + "</h6>";
+                        var footerSize = "<h6 class='small'>" + val.size + " - £35" + "</h6>";
+                        var footerDesc = ""; //"<h6 class='small'>" + val.desc + "</h6>";
                         var footerPrice = "<h6>" + val.price + "</h6>";
+                        var footerReq = "<a class='button button-primary small' href='mailto:nilnik85@gmail.com?Subject=Request%20watercolour item " + val.id + "' target='_top'>Enquiry</a>";
 
-                        var footer = "<div class='img-footer'>" + footerName + footerSize + footerDesc + footerPrice + "</div>";
+                        var footer = "<div class='img-footer'>" + footerName + footerSize + footerDesc + footerReq + "</div>";
 
                         var col = "<div class='one-third column'>" + img + footer + "</div>";
                         cols.push(col);
