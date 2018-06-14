@@ -12,14 +12,14 @@
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 40
         },
         {
             "id": 7,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 30
         },
         {
             "id": 4,
@@ -33,49 +33,49 @@
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 35
         },
         {
             "id": 6,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 35
         },
         {
             "id": 8,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 30
         },
         {
             "id": 9,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 30
         },
         {
             "id": 10,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 35
         },
         {
             "id": 11,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 30
         },
         {
             "id": 3,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size 14 x 10 in",
-            "price": 45
+            "price": 40
         }
     ]
 }
