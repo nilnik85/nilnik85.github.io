@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <title>Niloo Watercolour paintings - London, UK</title>
     <meta name="description" content="Watercolour paintings. Flowers, sunset and nature" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-    </style>
+
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-120828262-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120828262-1"></script>
     <script>
@@ -21,8 +23,14 @@
 
         gtag('config', 'UA-120828262-1');
     </script>
+    <!-- End Google site tag -->
 
-
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    </style>
 </head>
 
 <body>
@@ -77,6 +85,9 @@
         }
 
         function showPic(id) {
+
+            ga('send', 'event', 'image', 'view', 'image id: ' + id, 10);
+
             if (window.outerWidth < 768) {
                 return;
             }
