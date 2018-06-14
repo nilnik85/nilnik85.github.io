@@ -4,77 +4,77 @@
             "id": 1,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 31 x 29 cm",
             "price": 45
         },
         {
             "id": 2,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 32 x 25 cmn",
             "price": 40
         },
         {
             "id": 7,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 28 x 19 cm",
             "price": 30
         },
         {
             "id": 4,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 32 x 25 cm",
             "price": 45
         },
         {
             "id": 5,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 28 x 19 cm",
             "price": 35
         },
         {
             "id": 6,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 28 x 19 cm",
             "price": 35
         },
         {
             "id": 8,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 25 x 15 cm",
             "price": 30
         },
         {
             "id": 9,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 25 x 15 cm",
             "price": 30
         },
         {
             "id": 10,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 28 x 19 cm",
             "price": 35
         },
         {
             "id": 11,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 39 x 26 cm",
             "price": 30
         },
         {
             "id": 3,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size 14 x 10 in",
+            "size": "Size 32 x 17 cm",
             "price": 40
         }
     ]
