@@ -40,7 +40,7 @@
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="logo">
-                    <h3>NILOO Art</h3>
+                    <h3>NILOO Watercolours</h3>
                     <h6 class="small">My watercolour paintings</h6>
                 </li>
                 <li class="navbar-item">
@@ -118,8 +118,8 @@
 
                 var visibalePics = [];
 
-                for(var j=0; j<data.pics.length; j++) {
-                    if(data.pics[j].show) {
+                for (var j = 0; j < data.pics.length; j++) {
+                    if (data.pics[j].show) {
                         visibalePics.push(data.pics[j]);
                     }
                 }
@@ -140,7 +140,8 @@
                         // var footerPrice = "<h6>" + val.price + "</h6>";
                         var sold = val.sold ? "<span class='sold'>SOLD</span>" : "";
                         var footerSize = "<h6 class='small'>" + sold + val.size + " - £" + val.price + "</h6>";
-                        var footerReq = "<a class='button button-primary small' onclick='enquire(" + val.id + ");' href='mailto:nilnik85@gmail.com?Subject=Request%20watercolour item "
+                        var footerReq = "<a class='button button-primary small' onclick='enquire(" + val.id
+                            + ");' href='mailto:nilnik85@gmail.com?Subject=Request%20watercolour item "
                             + val.id + "' target='_top'>" + (val.sold ? "Re order" : "Order") + "</a>";
 
                         var footer = "<div class='img-footer'>" + footerSize + footerReq + "</div>";

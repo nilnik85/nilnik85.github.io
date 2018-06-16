@@ -94,7 +94,7 @@ img {
 }
 
 h6.small {
-  font-size: 0.95rem;
+  font-size: 1.25rem;
 }
 
 #view-l {
@@ -119,6 +119,11 @@ h6.small {
   text-align: center;
   padding: 1.5rem;
   margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
+.one-third.column:hover {
+  opacity: 1;
 }
 
 .button-primary {
@@ -140,9 +145,6 @@ h6.small {
   padding: 2px 6px;
   margin-right: 4px; 
 }
-
-
-
 
 
 /* Larger than phone */
@@ -190,9 +192,7 @@ h6.small {
   }
   
   .album img {
-    /* width: auto;
-    height: 100%; */
-    /* width: 76%; */
+    cursor: pointer;
   }
 
   .one-third.column {
