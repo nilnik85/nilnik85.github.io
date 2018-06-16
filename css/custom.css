@@ -121,9 +121,13 @@ h6.small {
   margin-bottom: 2rem;
 }
 
+.button-primary {
+  background: #23d160 !important;
+}
+
 .button.small {
   padding: 0.75rem 1rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin: 0;
   line-height: initial;
   height: auto;
@@ -181,17 +185,18 @@ h6.small {
   }  
 
   .img-container {
-    height: 33rem;
+    /* height: 33rem; */
     overflow: hidden;
   }
   
   .album img {
-    width: auto;
-    height: 100%;
+    /* width: auto;
+    height: 100%; */
+    /* width: 76%; */
   }
 
   .one-third.column {
-    height: 46rem;
+    height: 52rem;
   }
 
 
