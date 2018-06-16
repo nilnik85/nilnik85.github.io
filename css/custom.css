@@ -121,7 +121,7 @@ h6.small {
   margin-bottom: 2rem;
 }
 
-a.button.button-primary.small {
+.button.small {
   padding: 0.75rem 1rem;
   font-size: 0.75rem;
   margin: 0;
@@ -129,8 +129,13 @@ a.button.button-primary.small {
   height: auto;
   margin-top: 6px;
 }
-
-
+.sold {
+  font-size: 1rem;
+  background: red;
+  color: #eee;
+  padding: 2px 6px;
+  margin-right: 4px; 
+}
 
 
 

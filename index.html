@@ -119,13 +119,15 @@
                         if (!val) continue;
 
                         var img = "<div class='img-container'><img src='/pics/" + val.id + ".jpg' onclick='showPic(" + val.id + ");' /></div>";
-                        var footerName = ""; // "<strong>" + val.name + "</strong>";
-                        var footerSize = "<h6 class='small'>" + val.size + " - £" + val.price + "</h6>";
-                        var footerDesc = ""; //"<h6 class='small'>" + val.desc + "</h6>";
-                        var footerPrice = "<h6>" + val.price + "</h6>";
-                        var footerReq = "<a class='button button-primary small' onclick='enquire(" + val.id + ");' href='mailto:nilnik85@gmail.com?Subject=Request%20watercolour item " + val.id + "' target='_top'>Enquire</a>";
+                        //var footerName = "<strong>" + val.name + "</strong>";
+                        // var footerDesc = "<h6 class='small'>" + val.desc + "</h6>";
+                        // var footerPrice = "<h6>" + val.price + "</h6>";
+                        var sold = val.sold ? "<span class='sold'>SOLD</span>" : "";
+                        var footerSize = "<h6 class='small'>" + sold + val.size + " - £" + val.price + "</h6>";
+                        var footerReq = "<a class='button button-primary small' onclick='enquire(" + val.id + ");' href='mailto:nilnik85@gmail.com?Subject=Request%20watercolour item "
+                            + val.id + "' target='_top'>" + (val.sold ? "Order" : "Enquire") + "</a>";
 
-                        var footer = "<div class='img-footer'>" + footerName + footerSize + footerDesc + footerReq + "</div>";
+                        var footer = "<div class='img-footer'>" + footerSize + footerReq + "</div>";
 
                         var col = "<div class='one-third column'>" + img + footer + "</div>";
                         cols.push(col);
