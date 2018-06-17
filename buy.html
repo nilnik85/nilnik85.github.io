@@ -124,12 +124,10 @@
                     </script>
                 </div>
                 <p class="order-txt">
-                    <h6 style="border: 0; margin-bottom: 2px; font-weight: 800">NOTE:</h6>
                     This item comes in a frame and will be posted to you as soon as possible once payment is confirmed. You will be contacted
                     about this.
-                    <br/>
-                    Delivery cost is included in the price. Please provide your delivery address through the
-                    Paypal payment process. You can always contact me if you need help or have any question.
+                    <br/> Delivery cost is included in the price. Please provide your delivery address through the Paypal payment
+                    process. You can always contact me if you need help or have any question.
                     <br/>
                     <b style="text-decoration: underline">International postage is not available at the moment.</b>
                 </p>
@@ -154,13 +152,22 @@
             var urlParams = new URLSearchParams(location.search);
 
             itemId = urlParams.get('i');
-            price = urlParams.get('p');
-
-            $('#info-price').text("Order total: £" + price);
 
             if (!itemId) return;
 
-            $("#item-img").attr("src", "/pics/frame/" + itemId + ".jpg");
+            $.getJSON("data/pics.json", function (data) {
+                for (var i = 0; i < data.pics.length; i++) {
+                    var item = data.pics[i];
+
+                    if (item.id == itemId && item.show) {
+                        price = item.price;
+                        $("#item-img").attr("src", "/pics/frame/" + itemId + ".jpg");
+                        $('#info-price').text("Order total: £" + price);
+                        $('.paypal').show();
+                        return;
+                    }
+                }
+            });
         });
     </script>
 </body>
