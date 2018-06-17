@@ -91,6 +91,9 @@ img {
 
 .container .row.footer {
   margin-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding: 2rem 4rem;
+  background: #ddd;
 }
 
 h6.small {
