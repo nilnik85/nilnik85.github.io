@@ -44,6 +44,9 @@
                     <h6 class="small">My watercolour paintings</h6>
                 </li>
                 <li class="navbar-item">
+                    <a class="navbar-link active" href="/" target="_top">Home</a>
+                </li>
+                <li class="navbar-item">
                     <a class="navbar-link active" href="mailto:nilnik85@gmail.com?Subject=Niloo%20Watercolours" target="_top">Contact</a>
                 </li>
                 <li class="navbar-item">
@@ -86,11 +89,11 @@
             $("#view-l").hide();
             $('html, body').animate({
                 scrollTop: $("#img-" + selectedImgId).offset().top
-            }, 1000);
+            }, 400);
         }
 
-        function enquire(id) {
-            ga('send', 'event', 'image', 'view', 'image id: ' + id, 20);
+        function order(id) {
+            ga('send', 'event', 'image', 'order', 'image id: ' + id, 20);
         }
 
         function showPic(id) {
@@ -106,7 +109,7 @@
 
             $('html, body').animate({
                 scrollTop: $("#view-l").offset().top
-            }, 1000);
+            }, 400);
 
             selectedImgId = id;
 
@@ -124,7 +127,6 @@
                     }
                 }
 
-
                 for (var r = 0; r <= visibalePics.length / 3; r++) {
 
                     var cols = [];
@@ -135,14 +137,10 @@
                         if (!val || !val.show) continue;
 
                         var img = "<div class='img-container'><img id='img-" + val.id + "' src='/pics/frame/" + val.id + ".jpg' onclick='showPic(" + val.id + ");' /></div>";
-                        //var footerName = "<strong>" + val.name + "</strong>";
-                        // var footerDesc = "<h6 class='small'>" + val.desc + "</h6>";
-                        // var footerPrice = "<h6>" + val.price + "</h6>";
                         var sold = val.sold ? "<span class='sold'>SOLD</span>" : "";
                         var footerSize = "<h6 class='small'>" + sold + val.size + " - £" + val.price + "</h6>";
-                        var footerReq = "<a class='button button-primary small' onclick='enquire(" + val.id
-                            + ");' href='mailto:nilnik85@gmail.com?Subject=Request%20watercolour item "
-                            + val.id + "' target='_top'>" + (val.sold ? "Re order" : "Order") + "</a>";
+                        
+                        var footerReq = "<a class='button button-primary small' onclick='order(" + val.id + ")' href='/buy.html?i=" + val.id + "&p=" + val.price + "'>Order</a>";
 
                         var footer = "<div class='img-footer'>" + footerSize + footerReq + "</div>";
 

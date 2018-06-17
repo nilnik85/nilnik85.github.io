@@ -2,7 +2,7 @@ body{
  padding: 0;
  background: rgba(255,255,255,0);
  background: rgb(241, 241, 241) none repeat scroll 0% 0%;
- background: url('/pics/3.jpg');
+ background: url('/pics/22.jpg');
  font-family: 'Open Sans', sans-serif;
 }
 
@@ -122,12 +122,12 @@ h6.small {
   text-align: center;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  opacity: 0.85;
+  /* opacity: 0.85; */
 }
 
-.one-third.column:hover {
+/* .one-third.column:hover {
   opacity: 1;
-}
+} */
 
 .button-primary {
   background: #23d160 !important;
@@ -149,6 +149,16 @@ h6.small {
   margin-right: 4px; 
 }
 
+.buy-section {
+  background: #eee;
+  padding: 4rem;
+}
+
+.tick-header {
+  background: url('/img/grncheck.png') no-repeat left;
+  background-size: 34px;
+  padding-left: 40px;
+}
 
 /* Larger than phone */
 @media (min-width: 550px) {
@@ -202,5 +212,8 @@ h6.small {
     height: 52rem;
   }
 
+  .order-txt {
+    width: 300px;
+  }
 
 }

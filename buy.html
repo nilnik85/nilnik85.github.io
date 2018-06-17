@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Niloo Watercolour paintings - London, UK</title>
+    <meta name="description" content="Watercolour paintings. Flowers, sunset and nature" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-120828262-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120828262-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120828262-1');
+    </script>
+    <!-- End Google site tag -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    </style>
+    <script>
+        var itemId, price = null;
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="logo">
+                    <h3>NILOO Watercolours</h3>
+                    <h6 class="small">My watercolour paintings</h6>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link active" href="/" target="_top">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link active" href="mailto:nilnik85@gmail.com?Subject=Niloo%20Watercolours" target="_top">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#" disabled="disabled">
+                        <img src="/img/insta.png" />
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#" disabled="disabled">
+                        <img src="/img/fb.png" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row ">
+            <div class="columns buy-section">
+                <div class="buy-info">
+                    <h5 class="tick-header">Pay safely for your selected item using paypal.</h5>
+                    <br/>
+                    <a href="/">Cancel order</a>
+                    <h6 id="info-price" class="small" style="font-weight: bold; text-align: right"></h6>
+                </div>
+                <div class="buy-confirm" style="display: none;">
+                    <h5 style="color: mediumseagreen">Thank you. Your order and payment is now confirmed!</h5>
+                    <hr />
+                    <a href="/" class="button button-primary">Back to home page.</a>
+                </div>
+
+                <div class="paypal" style="float: right;">
+                    <div id="paypal-button"></div>
+                    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+                    <script>
+                        paypal.Button.render({
+
+                            env: 'production', // Or 'sandbox'
+
+                            client: {
+                                sandbox: 'AeVjpZxR03i26hyyMqDYELrqBoyzv6UtW9H4B0D7AxNG_ypWqpg_LAVxJOMM1d50ELpgzU59HIhHttcE',
+                                production: 'ATJQ-IqJW9ifuGpX9ErL3cgHtrbYNK0VkLtEOT7yFRYgQUgVdq-XzkY-QrnGhpV_blUZXJwc72VeUAz8'
+                            },
+
+                            commit: true, // Show a 'Pay Now' button
+
+                            payment: function (data, actions) {
+                                return actions.payment.create({
+                                    payment: {
+                                        transactions: [
+                                            {
+                                                amount: { total: price, currency: 'GBP' }
+                                            }
+                                        ]
+                                    }
+                                });
+                            },
+
+                            onAuthorize: function (data, actions) {
+                                return actions.payment.execute().then(function (payment) {
+
+                                    // The payment is complete!
+                                    // You can now show a confirmation message to the customer
+
+                                    $('.buy-info').hide();
+                                    $('.paypal').hide();
+                                    $('.buy-confirm').show();
+                                    ga('send', 'event', 'image', 'orderconfirm', 'image id: ' + itemId, price);
+
+                                });
+                            }
+
+                        }, '#paypal-button');
+                    </script>
+                </div>
+                <p class="order-txt">
+                    <h6 style="border: 0; margin-bottom: 2px; font-weight: 800">NOTE:</h6>
+                    This item comes in a frame and will be posted to you as soon as possible once payment is confirmed. You will be contacted
+                    about this.
+                    <br/>
+                    Delivery cost is included in the price. Please provide your delivery address through the
+                    Paypal payment process. You can always contact me if you need help or have any question.
+                    <br/>
+                    <b style="text-decoration: underline">International postage is not available at the moment.</b>
+                </p>
+                <img id="item-img" src="" alt="selected painting" style="width: 240px; float: left;" />
+            </div>
+        </div>
+
+        <div class="row footer">
+            <div class="column">
+                <span>
+                    <h6>© 2018 Niloo watercolours </h6>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var urlParams = new URLSearchParams(location.search);
+
+            itemId = urlParams.get('i');
+            price = urlParams.get('p');
+
+            $('#info-price').text("Order total: £" + price);
+
+            if (!itemId) return;
+
+            $("#item-img").attr("src", "/pics/frame/" + itemId + ".jpg");
+        });
+    </script>
+</body>
+
+</html>
