@@ -67,7 +67,7 @@ img {
 
 .img-container {
   overflow: hidden;
-  border: 8px solid #333;
+  border: 6px solid #333;
   padding: 40px;
   background: #fff;
 }
@@ -174,6 +174,13 @@ h6.small {
   clear: both;
 }
 
+.album img {
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+
+
+
 /* Larger than phone */
 @media (min-width: 550px) {
 
@@ -220,9 +227,6 @@ h6.small {
   
   .album img {
     cursor: pointer;
-  }
-
-  .one-third.column {
   }
 
   .order-txt {
