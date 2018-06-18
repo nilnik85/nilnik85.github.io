@@ -67,6 +67,9 @@ img {
 
 .img-container {
   overflow: hidden;
+  border: 8px solid #333;
+  padding: 40px;
+  background: #fff;
 }
 
 .album .column {
@@ -75,15 +78,15 @@ img {
 
 .img-footer {
   text-align: center;
-  color: #777;
-  margin-top: 0.15rem;
   background: #eee;
-  padding: 1rem;
-  border-left: 28px solid #ddd;
+  padding: 0.25rem;
+  border-bottom: 12px solid #ddd;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .img-footer h6, .footer h6{
-  color: #555;
+  color: #333;
   margin-bottom: 0;
   font-size: 1.25rem;
 }
