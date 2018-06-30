@@ -97,7 +97,7 @@
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size: 32 x 17 cm",
-            "price": 30,
+            "price": 40,
             "sold": false,
             "show": true
         },
@@ -106,7 +106,7 @@
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size: 28 x 19 cm",
-            "price": 30,
+            "price": 38,
             "sold": false,
             "show": true
         },
@@ -196,7 +196,7 @@
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
             "size": "Size: 28 x 19 cm",
-            "price": 30,
+            "price": 38,
             "sold": false,
             "show": true
         }
