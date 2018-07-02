@@ -36,7 +36,6 @@
 <body>
 
     <div class="container">
-
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="logo">
@@ -61,7 +60,10 @@
                 </li>
             </ul>
         </nav>
-
+    </div>
+    <div class="banner1 row" id="banner1">
+    </div>
+    <div class="container">
         <div class="row" id="view-l">
             <div class="close-btn" onclick="closeView()">close</div>
             <img src="" id="view-l-img" />
@@ -77,8 +79,8 @@
                 </span>
             </div>
         </div>
-
     </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script>
@@ -136,7 +138,7 @@
 
                         if (!val || !val.show) continue;
 
-                        var img = "<div class='img-container'><img id='img-" + val.id + "' src='/pics/" + val.id + ".jpg' onclick='showPic(" + val.id + ");' /></div>";
+                        var img = "<div class='frame'><img id='img-" + val.id + "' src='/pics/" + val.id + ".jpg' onclick='showPic(" + val.id + ");' /></div>";
                         var sold = val.sold ? "<span class='sold'>SOLD</span>" : "";
                         var footerSize = "<h6 class='small'>" + sold + val.size + " - <b>£" + val.price + "</b></h6>";
 
@@ -153,6 +155,20 @@
                         html: cols.join("")
                     }).appendTo("#album");
                 }
+
+                // var tiles = [];
+                // for (var i = 0; i < visibalePics.length; i++) {
+                //     var val = visibalePics[i];
+                //     if (!val || !val.show) continue;
+
+                //     var img = "<div class='tile'><div class='frame'><img id='img-" + val.id + "' src='/pics/" + val.id + ".jpg' onclick='showPic(" + val.id + ");' /></div></div>";
+                //     tiles.push(img);
+                // }
+
+                // $("<div />", {
+                //     "class": "row ",
+                //     html: tiles.join("")
+                // }).appendTo("#banner1");
             });
         });
     </script>
