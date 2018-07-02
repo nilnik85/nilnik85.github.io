@@ -169,10 +169,11 @@ h6.small {
 }
 
 
-#banner1 {
-  background: #eee;
-  height: 10rem;
+.banner1 {
+  /* background: #eee;
+  height: 10rem; */
 }
+
 
 .frame {
   padding: 18px;
@@ -237,5 +238,69 @@ h6.small {
     width: 60%;
     clear: none;
   }
+
+  @keyframes banner-before-anim {
+    from {left: -530px;}
+    to {left: -570px;}
+  }
+  
+  .banner1::before {
+    content: '';
+    position: absolute;
+    height: 1000px;
+    width: 700px;
+    background: #aeec73;
+    border-top-left-radius: 600px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    border-top-right-radius: 600px;
+    border-bottom-left-radius: 600px;
+    border-bottom-right-radius: 600px;
+    border-bottom-left-radius: 600px;
+    border-top-left-radius: 600px;
+    z-index: -100;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    left: -570px;
+    top: -340px;
+    animation-name: banner-before-anim;
+    animation-duration: 3s;
+  }
+  
+  
+  @keyframes banner1-after-anim {
+    from {top: -100px;}
+    to {top: -220px;}
+  }
+  
+  .banner1::after{
+    content: '';
+      position: absolute;
+      height: 1000px;
+      width: 700px;
+      background: #664277;
+      border-top-left-radius: 600px;
+      border-top-right-radius: 600px;
+      border-bottom-right-radius: 600px;
+      border-top-right-radius: 600px;
+      border-bottom-left-radius: 600px;
+      border-bottom-right-radius: 600px;
+      border-bottom-left-radius: 600px;
+      border-top-left-radius: 600px;
+      z-index: -100;
+      -webkit-transform: rotate(-40deg);
+      -moz-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+      -o-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+      right: -650px;
+      top: -220px;
+      animation-name: banner1-after-anim;
+      animation-duration: 3s;
+  }
+  
 
 }
