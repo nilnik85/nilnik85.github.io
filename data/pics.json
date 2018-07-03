@@ -19,11 +19,11 @@
             "show": true
         },
         {
-            "id": 4,
+            "id": 12,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size: 32 x 25 cm",
-            "price": 35,
+            "size": "Size: 28 x 19 cm",
+            "price": 39,
             "sold": false,
             "show": true
         },
@@ -63,7 +63,6 @@
             "sold": false,
             "show": false
         },
-
         {
             "id": 6,
             "name": "Flower",
@@ -73,7 +72,6 @@
             "sold": false,
             "show": true
         },
-        
         {
             "id": 10,
             "name": "Flower",
@@ -102,11 +100,11 @@
             "show": true
         },
         {
-            "id": 12,
+            "id": 4,
             "name": "Flower",
             "desc": "Original painted on 140lb watercolour paper",
-            "size": "Size: 28 x 19 cm",
-            "price": 39,
+            "size": "Size: 32 x 25 cm",
+            "price": 35,
             "sold": false,
             "show": true
         },
